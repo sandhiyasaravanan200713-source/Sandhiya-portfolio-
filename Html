@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      transition: color 0.5s ease;
+    }
+
+    header h1:hover {
+      color: #ff5733;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Stylish Portfolio</h1>
+    <p>Web Developer | Designer | Learner</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I am passionate about web development and design. I love creating stylish, modern, and responsive websites.</p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <p>HTML, CSS, JavaScript, Python, React</p>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <p>I have built several web applications, including portfolios, blogs, and e-commerce websites.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: example@mail.com <br> Phone: +91 9876543210</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
